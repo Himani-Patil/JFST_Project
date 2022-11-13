@@ -1,0 +1,71 @@
+body{
+    background-color: white;
+    margin: 0%;
+    display: flex;  /*flex box method*/
+    flex-direction: column;  /*flex box method*/
+    height: 100vh;
+    text-align: center;
+
+}
+
+nav{
+    background-color: black; /* #393939 */
+    color: white;
+    height: 70px;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.8);
+}
+
+.navIMG{
+    border-radius: 50px;
+    margin-top: 13px;
+    margin-left: 23px;
+}
+
+.navText{
+    margin-left: 98px;
+    margin-top: 13px;
+    position: absolute;
+    font-size: 30px;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navHeader{
+    position: absolute;
+}
+
+#home, #about, #company, #stat{
+    color: white;
+}
+
+.menu{
+    float: right;
+    margin-top: 21px;
+}
+
+li{
+    display: inline;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 35px;
+}
+
+.hover{
+    color: chartreuse;    
+}
+
+.footer{
+    color: white;
+    background-color:black;
+    text-align: center;
+    height: 100px;
+}
+
+main{
+    flex-grow: 1;     
+}
+
+.homeimg{
+    height: auto;
+    max-width: 100%;
+}
