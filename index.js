@@ -15,7 +15,7 @@ app.get("/companies",function(req,res){
 });
 
 app.get("/about",function(req,res){
-    res.render("ABout");
+    res.render("about");
 });
 
 app.get("/statistics",function(req,res){
