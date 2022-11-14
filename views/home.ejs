@@ -3,9 +3,70 @@
     <img src="images/internship2.jpg" class="homeimg">
     
     <p style="padding-top: 70px; color: black; font-size: 30px; font-weight: bolder;">THIRD YEAR 2022-23</p>
-    <img src="images/img1.jfif">
-    <!-- <script>
-        alert("hello");
-    </script> -->
+    
+    <div class="news" id="news1">
+        <img src="images/collegeLogoPhoto.jpg" style="float: left;" height="300px" width="300px">
+        <div class="newsContent">
+            <h3 style="margin-top: 20px; font-weight: bold;">Orientation Meeting</h3>
+            <p>By college placement cell</p>
+            <p>Today at 3:15 pm</p>
+            <p>Venue: Mechanical Auditorium</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus soluta suscipit accusantium. Animi, tempore porro iste ad illum maiores quasi perspiciatis, sunt laudantium, nobis architecto magnam facilis sit dolorum?</p>            
+            <div class="btnDiv">
+                <button class="transitionBtn" style="position: absolute;" onclick="showPrev('news1')"><</button>
+                <button class="transitionBtn" style="position: absolute; margin-left: 60px;" onclick="showNext('news1')">></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="news" id="news2" style="display: none;">
+        <img src="images/intelLogo.png" style="float: left;" height="300px" width="300px">
+        <div class="newsContent">
+            <h3 style="margin-top: 20px; font-weight: bold;">Pre Placement Talk</h3>
+            <p>By Team Intel</p>
+            <p>Today at 4:30 pm</p>
+            <p>Venue: Mechanical Auditorium</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus soluta suscipit accusantium. Animi, tempore porro iste ad illum maiores quasi perspiciatis, sunt laudantium, nobis architecto magnam facilis sit dolorum?</p>            
+            <div class="btnDiv">
+                <button class="transitionBtn" style="position: absolute;"  onclick="showPrev('news2')"><</button>
+                <button class="transitionBtn" style="position: absolute; margin-left: 60px;" onclick="showNext('news2')">></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="news" id="news3" style="display: none;">
+        <img src="images/facebookLogo.png" style="float: left;" height="300px" width="300px">
+        <div class="newsContent">
+            <h3 style="margin-top: 20px; font-weight: bold;">Coding Test</h3>
+            <p>By Team Facebook</p>
+            <p>Today at 7:00 pm</p>
+            <p>Venue: Online</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus soluta suscipit accusantium. Animi, tempore porro iste ad illum maiores quasi perspiciatis, sunt laudantium, nobis architecto magnam facilis sit dolorum?</p>            
+            <div class="btnDiv">
+                <button class="transitionBtn" style="position: absolute;" onclick="showPrev('news3')"><</button>
+                <button class="transitionBtn" style="position: absolute; margin-left: 60px;" onclick="showNext('news3')">></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showNext(current)
+        {
+            switch(current){
+                case 'news1': $("#news1").hide(); $("#news2").show(); break;
+                case 'news2': $("#news2").hide(); $("#news3").show(); break;
+                case 'news3': alert("End"); break;
+            }
+        }
+
+        function showPrev(current)
+        {
+            switch(current){
+                case 'news1': alert("End"); break;
+                case 'news2': $("#news2").hide(); $("#news1").show(); break;
+                case 'news3': $("#news3").hide(); $("#news2").show(); break;
+            }
+        }
+    </script>
 
 <%- include("partials/footer") -%>
