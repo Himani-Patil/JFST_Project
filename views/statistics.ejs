@@ -1,5 +1,114 @@
 <%- include("partials/header") -%>
+<style>
+ 
 
-    <h1>Statistics</h1>
+.container {
+  
+    display: flex;
+    width: 500px;
+    align-items: flex-end;
+    height: 390px;
+    padding-top: 10px;
+}
+
+.percent {
+    position: absolute;
+    border-right: 2px solid var(--text);
+    color: var(--text);
+    width: 50px;
+    height: 390px;
+    display: flex;
+    padding-bottom: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percent span {
+    font-size: 15px;
+    height: 12px;
+    line-height: 12px;
+    text-align: right;
+    padding-right: 4px;
+    font-weight: 600;
+}
+
+.options {
+    position: relative;
+    left: 50px;
+    background: var(--background1);
+    width: 350px;
+    color: var(--text);
+    border-top: 10px solid var(--text);
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.option::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 27px;
+    margin-left: 10px;
+    background: 
+    linear-gradient(#5b9dff,#96c6e0);
+    width: 40px;
+  transition: 1s;
+}
+.option:nth-child(1)::after{
+    height: calc((363px / 100) * 100);
+}
+.option:nth-child(2)::after{
+    height: calc((363px / 100) * 95);
+}
+.option:nth-child(3)::after{
+    height: calc((363px / 100) * 95);
+}
+.option:nth-child(4)::after{
+    height: calc((363px / 100) * 50 );
+}
+
+.option:nth-child(5)::after{
+    height: calc((363px / 100) * 30);
+}
+</style>
+
+<h1 class="heading">Students intake from various branches</h1>
+    <div class="container">
+        <div class="percent">
+            <span>98%</span>
+            <span>80%</span>
+            <span>72%</span>
+            <span>50%</span>
+            <span>25%</span>
+        </div>
+        <div class="options">
+            <span class="option">CS</span>
+            <span class="option"> IT</span>
+            <span class="option">ENTC</span>
+            <span class="option">MECH</span>
+            <span class="option">INSTRU</span>
+
+        </div>
+    </div>
+
+<center>
+  <div class="internshipstatus">
+  <p class="textinternship">
+  <p><a href="https://docs.google.com/spreadsheets/d/1RxorROSjwUNCBdFEx9diyHNz-a1gG4jdYFIhfNZQTcE/edit#gid=141867192" target="_blank">Internship details of 2023 Grads</a></p>
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
+</p>
+  </div>
+</center>
+
+   
+
+
+
+
     
 <%- include("partials/footer") -%>

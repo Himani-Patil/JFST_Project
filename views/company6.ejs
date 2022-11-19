@@ -1,0 +1,140 @@
+<%- include("partials/header") -%>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 600px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1 class="heading">FLIPKART</h1>
+<h3></h3>
+
+<div class="outermain">
+    <center>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+        <center>
+        <p class="centertext"><img class="companyimage" src="images/flipkart.png" alt="company1" style="width:200px;height:250px;">
+            
+            Flipkart Group AG is a multinational investment bank and financial services company founded and based in Switzerland. Co-headquartered in the cities of Zürich and Basel, it maintains a presence in all major financial centres as the largest Swiss banking institution and the largest private bank in the world.
+            <p class="centertext">In India, UBS currently operates from offices in Pune (Yerwada and Kharadi), Navi Mumbai (Airoli) and in the Bandra Kurla Complex in Mumbai.</p>													
+        </p>
+          </center>  
+    </div>
+    <div class="flip-card-back"> 
+<p>Number of interviews and types:2 Interviews (1 Tech + 1 HR)</p>
+<p>CTC:	CTC Monthly : CTC Annual = INR 12 LPA + 1.7 Bonus subject to performance</p>
+<p>Stipend: 80,000</p>
+<p>Eligible Branches:Comp, IT</p>
+<p>CGPA Criteria:	7 and above</p>
+<p>Backlog Criteria:	No live/dead backlogs considered</p>
+<p>Job Profile:	Technology Analyst Intern</p>
+<p>Location:	Pune</p>
+
+</div>
+    
+  </div>
+</div>
+</center>
+</div>
+
+
+<div class="list-group w-auto">
+  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <h1 class="headingrounds">ROUND 1</h1>
+    <div class="d-flex gap-2 w-100 justify-content-between">
+      <div>
+        <h4 class="mb-0">HackerEarth - Aptititude test
+          "Consisted of 30 questions
+          
+          </h4>
+        <p class="mb-0 opacity-75"> All questions tested basic concepts of DS and OOP
+          Code snippet questions were for both C, C++ & Java"</p>
+      </div>
+      <small class="opacity-50 text-nowrap">Pradipa Raut(CS)</small>
+    </div>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <h1 class="headingrounds">ROUND 2</h1>
+    <div class="d-flex gap-2 w-100 justify-content-between">
+      <div>
+        <h4 class="mb-0">Interviews</h4>
+        <h6 class="mb-0">1</h6>
+          <p class="leftpara">1. Introduce yourself</p>
+          <p class="leftpara">2. Questions based on my resume & explain what I learnt in courses I completed</p>
+          <p class="leftpara">3. Two coding questions live</p>
+          <p class="leftpara">4. Questions on Graphs, Linked lists</p> 
+          <p class="leftpara">5. Explain your recent most project in details, & a few follow-up questions</p> 
+          <p class="leftpara">6. General Aptitude question - (Permutation and combinations)</p> 
+          <p class="leftpara">7. Which is the domain of your interest?</p>
+          <p class="leftpara">8. Any questions for me?"</p>
+         
+          
+      </div>
+      <small class="opacity-50 text-nowrap">Sneha Naik(CS)</small>
+    </div>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <div class="d-flex gap-2 w-100 justify-content-between">
+      <div>
+        <h6 class="mb-0">2</h6>
+        <p class="leftpara">1. Introduce yourself</p>
+        <p class="leftpara">2. Questions based on my resume & explain what I learnt in courses I completed</p>
+        <p class="leftpara">3. Two coding questions live</p>
+        <p class="leftpara">4. Questions on Graphs, Linked lists</p> 
+        <p class="leftpara">5. Explain your recent most project in details, & a few follow-up questions</p> 
+        <p class="leftpara">6. General Aptitude question - (Permutation and combinations)</p> 
+        <p class="leftpara">7. Which is the domain of your interest?</p>
+        <p class="leftpara">8. Any questions for me?"</p>
+       
+      <small class="opacity-50 text-nowrap">Krishna Laturiya(CS)</small>
+    </div>
+  </a>
+</div>
+
+<a href="https://docs.google.com/spreadsheets/d/1d8NaZmpuWP7x3ElVQ_lgKtaD5AxigdNfSWANBOQQU1c/edit#gid=1317803245" target="_blank">
+    <button type="button">more Info...</button>
+  </a>
