@@ -1,46 +1,112 @@
 <%- include("partials/header") -%>
+<style>
+ 
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <h1>hi</h1>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+.container {
+  
+    display: flex;
+    width: 500px;
+    align-items: flex-end;
+    height: 390px;
+    padding-top: 10px;
+}
+
+.percent {
+    position: absolute;
+    border-right: 2px solid var(--text);
+    color: var(--text);
+    width: 50px;
+    height: 390px;
+    display: flex;
+    padding-bottom: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percent span {
+    font-size: 15px;
+    height: 12px;
+    line-height: 12px;
+    text-align: right;
+    padding-right: 4px;
+    font-weight: 600;
+}
+
+.options {
+    position: relative;
+    left: 50px;
+    background: var(--background1);
+    width: 350px;
+    color: var(--text);
+    border-top: 10px solid var(--text);
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.option::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 27px;
+    margin-left: 10px;
+    background: 
+    linear-gradient(#5b9dff,#96c6e0);
+    width: 40px;
+  transition: 1s;
+}
+.option:nth-child(1)::after{
+    height: calc((363px / 100) * 100);
+}
+.option:nth-child(2)::after{
+    height: calc((363px / 100) * 95);
+}
+.option:nth-child(3)::after{
+    height: calc((363px / 100) * 95);
+}
+.option:nth-child(4)::after{
+    height: calc((363px / 100) * 50 );
+}
+
+.option:nth-child(5)::after{
+    height: calc((363px / 100) * 30);
+}
+</style>
+
+<h1 class="heading">Students intake from various branches</h1>
+    <div class="container">
+        <div class="percent">
+            <span>98%</span>
+            <span>80%</span>
+            <span>72%</span>
+            <span>50%</span>
+            <span>25%</span>
+        </div>
+        <div class="options">
+            <span class="option">CS</span>
+            <span class="option"> IT</span>
+            <span class="option">ENTC</span>
+            <span class="option">MECH</span>
+            <span class="option">INSTRU</span>
+
+        </div>
+    </div>
+
+<center>
+  <div class="internshipstatus">
+  <p class="textinternship">
+  <p><a href="https://docs.google.com/spreadsheets/d/1RxorROSjwUNCBdFEx9diyHNz-a1gG4jdYFIhfNZQTcE/edit#gid=141867192" target="_blank">Internship details of 2023 Grads</a></p>
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
+</p>
+  </div>
+</center>
+
+   
+
 
 
 

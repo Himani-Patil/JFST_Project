@@ -264,3 +264,21 @@ main{
     text-decoration: dashed;
     font-size: x-large;
   }
+
+  div.internshipstatus
+  {
+     margin-top: 40px;
+     background-color: #92d9e0;
+     border-radius: 20px;
+     height:250px;
+     width:700px;
+     font-size: medium;
+     box-shadow: 5px 10px;
+  
+
+  }
+
+  .textinternship
+  {
+    padding:5px;
+  }
