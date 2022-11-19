@@ -12,7 +12,7 @@ h3{
 }
 
 nav{
-    background-color: black; /* #393939 */
+    background-color:#182747 ; /* #393939 */
     color: white;
     height: 70px;
     box-shadow: 0 2px 20px 0 black;
@@ -63,7 +63,7 @@ li{
 
 .footer{
     color: white;
-    background-color:black;
+    background-color:#182747 ;
     text-align: center;
     height: 100px;
     padding-bottom: 100px;
@@ -114,11 +114,171 @@ main{
 }
 
 .contact{
-    background-color: brown; 
+    background-color:lightblue; 
     width: 100%; 
     margin-top: 70px; 
     padding-top: 20px;
     padding-left: 50px;
     height: 400px; 
-    color: white;
+    color:darkcyan;
 }
+
+.image
+  {
+    width: 235px;
+    height:100px;
+  }
+
+  *{
+    margin: 0px;
+    padding: 0px;
+   }
+   body{
+    font-family: arial;
+   }
+
+   .main{
+   
+    margin: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 120px;
+    row-gap:50px;
+    margin-left: 70px;
+   }
+   
+   .card{
+        width: 20%;
+        display: inline-block;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px; 
+        margin: 2%;
+        width:250px;
+        height:230px ;
+        
+       }
+   
+   .image img{
+     width: 100%;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+     
+   
+    
+    }
+   
+    h1{
+        font-size: 20px;
+      }
+
+   .title{
+    
+     text-align: center;
+     padding: 10px;
+     
+    }
+
+    .heading
+    {
+        color: #188f9a;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-style: italic;
+        
+    }
+
+    .headingrounds
+    {
+        color:black;
+        font-style: bold;
+    }
+   
+  
+   .des{
+     padding: 3px;
+     text-align: center;
+    
+     padding-top: 10px;
+     border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+   }
+
+   button{
+     margin-top: 3px;
+     margin-bottom:3px;
+     background-color: rgb(178, 233, 252);
+     border: 1px solid black;
+     border-radius: 5px;
+     padding:10px;
+   }
+
+   button:hover{
+     background-color: black;
+     color: white;
+     transition: .5s;
+     cursor: pointer;
+   }
+
+   .companyimage
+   {
+    float: left;
+   }
+
+.centertext
+{
+    text-align: center;
+    font-size: 15px;
+}
+
+.list-group {
+    max-width: 600px;
+    margin: 4rem auto;
+  }
+  
+  .form-check-input:checked + .form-checked-content {
+    opacity: .5;
+  }
+  
+  .form-check-input-placeholder {
+    border-style: dashed;
+  }
+  [contenteditable]:focus {
+    outline: 0;
+  }
+  
+  .list-group-checkable .list-group-item {
+    cursor: pointer;
+  }
+
+  .leftpara
+  {
+    text-align: left;
+
+  }
+
+  .exelsheet
+  {
+    background-color: #92d9e0;
+    height: 50px;
+    color: black;
+    text-decoration: dashed;
+    font-size: x-large;
+  }
+
+  div.internshipstatus
+  {
+     margin-top: 40px;
+     background-color: #92d9e0;
+     border-radius: 20px;
+     height:250px;
+     width:700px;
+     font-size: medium;
+     box-shadow: 5px 10px;
+  
+
+  }
+
+  .textinternship
+  {
+    padding:5px;
+  }
