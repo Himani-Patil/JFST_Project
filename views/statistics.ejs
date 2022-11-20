@@ -1,7 +1,6 @@
 <%- include("partials/header") -%>
 <style>
  
-
 .container {
   
     display: flex;
@@ -73,8 +72,9 @@
 }
 </style>
 
-<h1 class="heading">Students intake from various branches</h1>
-    <div class="container">
+<h1 class="heading"  style="margin-top: 70px; color: #182747;">Students intake from various branches</h1>
+    
+<div class="container">
         <div class="percent">
             <span>98%</span>
             <span>80%</span>
@@ -90,25 +90,28 @@
             <span class="option">INSTRU</span>
 
         </div>
-    </div>
+</div>
 
 <center>
-  <div class="internshipstatus">
+  <div class="internshipstatus" style="margin-bottom: 100px;">
   <p class="textinternship">
-  <p><a href="https://docs.google.com/spreadsheets/d/1RxorROSjwUNCBdFEx9diyHNz-a1gG4jdYFIhfNZQTcE/edit#gid=141867192" target="_blank">Internship details of 2023 Grads</a></p>
-  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
-  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
-  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
-  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
-  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank">Placement statistics Year 2021-22</a></p>
-</p>
+  <p><a href="https://docs.google.com/spreadsheets/d/1RxorROSjwUNCBdFEx9diyHNz-a1gG4jdYFIhfNZQTcE/edit#gid=141867192" target="_blank" class="stat_links">Internship details of 2023 Grads</a></p>
+  <p><a href="https://docs.google.com/spreadsheets/d/1RxorROSjwUNCBdFEx9diyHNz-a1gG4jdYFIhfNZQTcE/edit#gid=154107981" target="_blank" class="stat_links">Internship details of 2022 Grads</a></p>
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2021-22.pdf" target="_blank" class="stat_links">Placement statistics Year 2021-22</a></p>
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2020-21.pdf" target="_blank" class="stat_links">Placement statistics Year 2020-21</a></p>  
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2019-20.pdf" target="_blank" class="stat_links">Placement statistics Year 2019-20</a></p>
+  <p><a href="https://www.cumminscollege.org/wp-content/uploads/2022/09/Placements2018-19.pdf" target="_blank" class="stat_links">Placement statistics Year 2018-19</a></p>  
+  </p>
   </div>
 </center>
 
-   
-
-
-
-
+<script>
+    $(".stat_links").mouseover(function(){
+       $(this).css("color","black");
+       $(this).mouseleave(function(){
+           $(this).css("color","#182747");
+       });
+   });        
+</script>
     
 <%- include("partials/footer") -%>

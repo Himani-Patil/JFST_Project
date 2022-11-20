@@ -4,7 +4,8 @@
 
     <img src="images/internship2.jpg" class="homeimg">
     
-    <p style="padding-top: 70px; color: black; font-size: 30px; font-weight: bolder;">THIRD YEAR 2022-23</p>
+    <p style="padding-top: 70px; color: #182747; font-size: 30px; font-weight: bolder;">THIRD YEAR 2022-23</p>
+    <br><br>
 
 <!-- Images for news ticker -->
     
@@ -53,11 +54,83 @@
         </div>
     </div>
 
+
 <!-- Contact Information -->
 
-    <div class="contact">
-        <div style="position: absolute;">
-            <h3 style="font-weight: bold;">Traning and Placement Officer:</h1>
+    <div class="contact" >
+
+        <!-- Upcoming Events -->
+        <div class="upcoming" style="height: 500px; background-color:#dfe8fd; margin-top: 70px; width: 100%;">
+            <p style="padding-top: 70px; color: #182747; font-size: 30px; font-weight: bolder;">UPCOMING SCHEDULE</p>
+            <br><br>
+            <div class="divTable" style="padding-left: 350px;">
+                <table>
+                    <tr>
+                        <th>DATE</th>
+                        <th>TIME</th>
+                        <th>VENUE</th>
+                        <th>COMPANY</th>
+                        <th>EVENT</th>
+                        <th>Branch</th>
+                    </tr>
+                    <tr>
+                        <td>9th Oct</td>
+                        <td>Full Day</td>
+                        <td>Danfoss Office</td>
+                        <td>Danfoss</td>
+                        <td>Full process</td>
+                        <td>All</td>
+                    </tr>
+                    <tr>
+                        <td>11th Oct</td>
+                        <td>Morning slot</td>
+                        <td>IT Building</td>
+                        <td>Avlara</td>
+                        <td>PPT + Online</td>
+                        <td>Comp, IT & ENTC</td>
+                    </tr>
+                    <tr>
+                        <td>12th Oct</td>
+                        <td>Full Day</td>
+                        <td>IT Building</td>
+                        <td>Avlara</td>
+                        <td>Interview</td>
+                        <td>Comp, IT & ENTC</td>
+                    </tr>
+                    <tr>
+                        <td>17th Oct</td>
+                        <td>11:15 AM</td>
+                        <td>Virtual</td>
+                        <td>Northen Trust</td>
+                        <td>PPT</td>
+                        <td>All</td>
+                    </tr>
+                </table>
+            </div>
+            <br><p><a href="https://docs.google.com/spreadsheets/d/1RxorROSjwUNCBdFEx9diyHNz-a1gG4jdYFIhfNZQTcE/edit#gid=887992152" style="font-size: 20px;" class="more_link">For more updates click here .....</a></p>
+        </div>
+
+        <div style="position: absolute; padding-left: 50px;">
+            <h3 style="font-weight: bold; color: white; padding-top: 20px;">Traning and Placement Officer:</h3>
+            <br>
+            <img src="images/TPO.jpg" width="150px" height="160px">
+            <p style="font-weight: bold; font-size:large;">Prof. Amit Rajurkar</p><br>
+            <p style="margin-left: 0%; position: absolute; margin-left: 40px;">Landline Direct: 020-25311131/25311132</p><br>
+            <p style="margin-left: 0%; position: absolute; margin-left: 40px;">Mobile: 9822493920</p><br>
+            <p style="margin: 0%; position: absolute; margin-left: 40px;">Email id: placements@cumminscollege.in</p>
+        </div>
+
+        <div style="border-left: 1px solid white; height: 400px; margin-left: 470px; position: absolute;"></div>
+
+        <div style=" height:400px; margin-right: 100px; margin-left: 570px;">
+            <h3 style="font-weight: bold; color: white; padding-top: 40px;">Traning and Placement Team 2022-23</h3>
+            <div style="padding-top: 50px;"> 
+                <img src="images/member1.jfif" height="160px" width="140px" style="margin-right: 50px;">
+                <img src="images/member2.jfif" height="160px" width="140px" style="margin-right: 50px;">
+                <img src="images/member3.jfif" height="160px" width="140px" style="margin-right: 50px;">
+                <img src="images/member4.jfif" height="160px" width="140px">
+            </div>
+            <div style="padding-top: 20px; padding-left: 40px;" ><p style="float: left; margin-right: 100px; margin-left: 50px;">Anna Watson</p><p style="float: left; margin-right: 120px;">Harry Potter</p><p style="float: left; margin-right: 110px;">Lucy Pevensie</p><p style="float: left;">Susan Caspian</p></div>
         </div>
     </div>
 
@@ -81,6 +154,14 @@
                 case 'news3': $("#news3").hide(); $("#news2").show(); break;
             }
         }
+
+        $(".more_link").mouseover(function(){
+            $(this).css("color","black");
+            $(this).mouseleave(function(){
+            $(this).css("color","#182747");
+            });
+        });  
     </script>
 
+    
 <%- include("partials/footer") -%>
