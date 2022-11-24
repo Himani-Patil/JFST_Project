@@ -111,7 +111,31 @@
        $(this).mouseleave(function(){
            $(this).css("color","#182747");
        });
-   });        
+   });    
+   
+   function loadXMLDoc() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      const xmlDoc = xhttp.responseXML;
+      const data = xmlDoc.getElementsByTagName("data");
+      myFunction(data)
+    }
+    xhttp.open("GET", "noOfStudents.xml", true);
+    xhttp.send();
+  }
+
+  function myFunction(data) {
+    var val = document.getElementById("company").value;
+    let table = "<tr><th>2022</th><th>2021</th><th>2020</th><th>2019</th></tr>";
+    for (let i = 0; i < cd.length; i++) 
+    {  
+      if (cd[i].getElementsByTagName("company")[0].childNodes[0].nodeValue == val) 
+      {
+        table += "<tr><td>" + cd[i].getElementsByTagName("2022")[0].childNodes[0].nodeValue + "</td><td>" + cd[i].getElementsByTagName("2021")[0].childNodes[0].nodeValue + "</td><td>" + cd[i].getElementsByTagName("2020")[0].childNodes[0].nodeValue + "</td><td>" + cd[i].getElementsByTagName("2019")[0].childNodes[0].nodeValue + "</td></tr>";
+      }
+    }
+    document.getElementById("demo").innerHTML = table;
+  }
 </script>
     
 <%- include("partials/footer") -%>

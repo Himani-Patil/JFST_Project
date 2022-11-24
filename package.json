@@ -19,6 +19,11 @@
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "lodash": "^4.17.21"
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "node-xml-stream": "^1.0.2",
+    "xml2js": "^0.4.23",
+    "xml2js-parser": "^1.1.1",
+    "xmlbuilder2": "^3.0.2"
   }
 }
